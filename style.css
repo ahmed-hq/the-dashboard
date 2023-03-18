@@ -1,4 +1,37 @@
-html{
-    background-color: hsl(240,20%,15.69%);
-    color: hsl(60,100%,99.41%);
+html {
+  background-color: hsl(240, 20%, 15.69%);
+  color: hsl(60, 100%, 99.41%);
+
+}
+
+body{
+    margin: 0%;
+}
+
+.dashboard_wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 18vw auto 15vw;
+  grid-template-rows: 17vh auto;
+}
+
+.side-bar_wrapper {
+    background-color: hsl(142,20%,17%, 100%);
+    border-right: 0.5px solid hsl(142.74,48.72%,38.24%);
+    grid-row: 1 / -1;
+    
+}
+
+.nav-bar_wrapper {
+    background-color: hsl(240,20%,19%);
+    grid-column: 2 / 4;
+    
+}
+
+.projects_wrapper {
+    grid-row: 2 / -1;
+}
+
+.right-side_wrapper{
+    grid-row: 2 / -1;
 }
