@@ -9,6 +9,11 @@ body{
     margin: 0%;
 }
 
+h2 {
+    font-size: 1.7rem;
+    margin: 0%;
+}
+
 h3 {
     margin: 1.5rem 0rem;
     font-weight: 500;
@@ -21,11 +26,17 @@ h4 {
 
 }
 
+p {
+    margin: 0%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 .dashboard_wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: 18vw auto 18vw;
-  grid-template-rows: 20vh auto;
+  grid-template-rows: 23vh auto;
   
 }
 
@@ -69,6 +80,7 @@ h4 {
 .nav-bar_wrapper {
     background-color: hsl(240,20%,19%);
     display: grid;
+    row-gap: 1.7rem;
     grid-template-columns: 40vw auto;
     grid-template-rows: 3.7rem 1fr;
     padding: 1.7rem 3rem;
@@ -114,6 +126,23 @@ fill: hsl(240,20%,27%);
 #profile-name{
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.profile-info_wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.profile-name_wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.main-avatar{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem;
 }
 
 .projects_wrapper {
