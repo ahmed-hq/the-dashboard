@@ -23,7 +23,7 @@ h4 {
   display: grid;
   height: 100vh;
   grid-template-columns: 18vw auto 18vw;
-  grid-template-rows: 17vh auto;
+  grid-template-rows: 20vh auto;
   
 }
 
@@ -66,8 +66,20 @@ h4 {
 
 .nav-bar_wrapper {
     background-color: hsl(240,20%,19%);
+    display: grid;
+    grid-template-columns: 40vw auto;
+    grid-template-rows: 3.7rem 1fr;
+    padding: 1.7rem 3rem;
     grid-column: 2 / 4;
-    
+}
+
+.search-bar_wrapper{
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: center;
+    background-color: hsl(240,20%,15.69%);
+    border-radius: 3px;
+    border: 0.5px solid hsl(240,20%,27%);
 }
 
 .projects_wrapper {
