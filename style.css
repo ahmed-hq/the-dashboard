@@ -31,15 +31,20 @@ p {
   margin: 6px 0px;
 }
 
-.p-light{
-    font-size: 0.9rem;
-    font-weight: 200;
-    opacity: 90%;
+.p-light {
+  margin: 0%;
+  font-size: 0.9rem;
+  font-weight: 200;
+  opacity: 90%;
 }
 
-.p-heavy{
-    font-size: 1.1rem;
-    font-weight: 500;
+.p-heavy {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.no-margin {
+  margin: 0px;
 }
 
 button {
@@ -162,7 +167,8 @@ button:active {
 .profile-name_wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  justify-content: center;
+  row-gap: 0.3rem;
 }
 
 .main-avatar {
@@ -182,7 +188,7 @@ button:active {
   display: flex;
   flex-direction: column;
   grid-row: 2 / -1;
-  padding: 3rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .projects_container {
@@ -213,27 +219,39 @@ button:active {
 
 .right-side_wrapper {
   grid-row: 2 / -1;
-  padding: 3rem 3rem 3rem 0rem;
+  padding: 2rem 3rem 2rem 0rem;
 }
 
-.announcements-card{
-    background-color: hsl(240, 20%, 19%);
-    padding: 2rem;
-    border-radius: 3px;
+.announcements-card {
+  background-color: hsl(240, 20%, 19%);
+  padding: 2rem;
+  border-radius: 3px;
+  /* margin-bottom: 1.5rem; */
 }
 
-.announce_wrapper{
-    /* margin-bottom: 1.5rem; */
+.trending-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: hsl(240, 20%, 19%);
+  padding: 2rem;
+  border-radius: 3px;
 }
 
-.trending-card{
-    background-color: hsl(240, 20%, 19%);
-    padding: 1rem;
-    border-radius: 3px;
+.account-wrapper {
+  display: flex;
+  column-gap: 1rem;
 }
 
-.divider{
-    height: 0.5px;
-    background-color: hsl(240, 20%, 27%);
-    margin: 1.3rem 0rem;
+#kendall {
+  background-image: url(images/kendall.png);
+}
+#morgan {
+  background-image: url(images/morgan.png);
+}
+
+.divider {
+  height: 0.5px;
+  background-color: hsl(240, 20%, 27%);
+  margin: 1.3rem 0rem;
 }
