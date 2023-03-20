@@ -8,6 +8,12 @@ body {
   margin: 0%;
 }
 
+h1 {
+  margin: 0%;
+  font-size: 2rem;
+  /* font-weight: ; */
+}
+
 h2 {
   font-size: 1.7rem;
   margin: 0%;
@@ -93,8 +99,7 @@ button:active {
 
 .side-menu_wrapper {
   display: grid;
-  row-gap: 0.3rem;
-  grid-auto-rows: 3rem;
+  grid-auto-rows: 4rem;
   /* grid-auto-rows: auto; */
 }
 
@@ -102,6 +107,13 @@ button:active {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-bottom: 0.5px solid hsl(60, 100%, 99.41%, 15%);
+  transition: 0.5s;
+  padding-left: 0.5rem;
+}
+
+.menu-items:hover {
+  background-color: hsl(142.74, 48.72%, 45.24%);
 }
 
 .menu-icon {
@@ -203,14 +215,37 @@ button:active {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: hsl(240, 20%, 19%);
   border-top: solid hsl(142.74, 48.72%, 38.24%);
   border-radius: 3px;
   transition: 0.2s;
+  padding: 3rem 2rem;
 }
 
 .project-card:hover {
   border-top: 5px solid hsl(142.74, 48.72%, 38.24%);
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 100;
+  max-width: 20rem;
+  opacity: 60%;
+}
+
+.projects-btns_wrapper {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-end;
+}
+
+.project-btn {
+  fill: hsl(240, 19.59%, 35.02%);
+  width: 1.7rem;
+  transition: 0.2s;
 }
 
 .project-card:active {
